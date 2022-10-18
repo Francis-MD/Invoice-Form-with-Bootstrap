@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PageTitle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/site.css">
+</head>
+
+<body>
+    <!--PRINT BUTTON-->
+<div class="container rounded p-2 border border-1">
+    <div class="d-flex justify-content-end mt-3 d-print-none">
+        <button type="button" class="btn btn-dark" onclick="window.print()">Print this page</button>
+    </div>
+    
+    <!--LOGO AREA-->
+    <div class="row align-items-center">
+        <div class="col-sm-7 d-flex justify-content-start">
+            <img src="./img/IdeaFoundryLogo.png" class="img-fluid" tittle="Invoice Logo" alt="Invoice Logo">
+        </div>
+        <div class="col-sm-5 d-flex justify-content-sm-end justify-content-start">
+            <strong>Customer No.:</strong>&nbsp;4908
+        </div>
+    </div>
+
+    <!--DATE & INVOICE NO-->
+    <hr>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-sm-6 d-flex justify-content-start">
+            <strong>Date:</strong>&nbsp;5/11/2022
+        </div>
+        <div class="col-sm-6 d-flex justify-content-sm-end justify-coontent-start">
+            <strong>Invoice No.:</strong>&nbsp;13098
+        </div>
+    </div>
+    <hr>
+
+    <!--INVOICE TO--PAY TO-->
+    <div class="row row-cols-md-2">
+        <div class="col-6 d-flex justify-content-start">
+            <div>
+                <strong>Invoice To:</strong>&nbsp;
+                <address class="address">
+                    John Doe<br>
+                    4444 Al Khaim Way<br>
+                    Dubai, United Arab Emirates
+                </address>
+            </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <div>
+                <strong>Pay To:</strong>&nbsp;
+                <address class="address">
+                    Global Tribe LLC<br>
+                    6666 Al Quoz Road<br>
+                    Dubai, United Arab Emirates
+                </address>
+            </div>
+        </div>
+    </div>
+    
+    <!--DATA TABLE-->
+    <div class="row table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Rate</th>
+                    <th>Qty</th>
+                    <th class="text-end">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Design</td>
+                    <td>Web Design</td>
+                    <td>$100.00</td>
+                    <td>12</td>
+                    <td class="text-end">$1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Development</td>
+                    <td>Web Development</td>
+                    <td>$110.00</td>
+                    <td>10</td>
+                    <td class="text-end">$1,100.00</td>
+                </tr>
+                <tr>
+                    <td>Deployment </td>
+                    <td>Deployment and Hosting</td>
+                    <td>$50.00</td>
+                    <td>5</td>
+                    <td class="text-end">$250.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Sub Total:</td>
+                    <td class="text-end">$2,550.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Tax:</td>
+                    <td class="text-end">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Sub Total:</td>
+                    <td class="text-end">$2,550.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <footer class="row">
+        <div class="col-12">
+            <p>
+                <strong>NOTE:</strong>&nbsp;A virtual generated receipt, no signature required.
+            </p>
+        </div>
+    </footer>
+
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
